@@ -1,0 +1,13 @@
+@charset "UTF_8";
+
+body{
+    background-color: gray;
+}
+main{
+    margin: auto;
+}
+main h1{
+    margin: auto;
+    background-color: aqua;
+
+}

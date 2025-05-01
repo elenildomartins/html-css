@@ -1,0 +1,122 @@
+Muito obrigado pelas aulas até o momento, Mestre Guanabara. Fiz os exercícios propostos e cheguei aos seguintes resultados:
+IMC com todas as faixas:
+Algoritmo "Aula 7c - Calculo do IMC"
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Gustavo Guanabara
+// Descrição   : Calcula o IMC! E lhe diz se vc está acima do seu peso ideal.
+// Autor(a)    : Danilo A.S. Fontes
+// Data atual  : 10/03/2020
+Var
+   peso, alt, IMC: Real
+
+
+Inicio
+// Peso ideal= IMC entre 18,5 e 25. IMC é igual a massa/altura ao quadrado.
+// abaixo de 17 = Muito abaixo do peso
+// de 17 a 18,5 = abaixo do peso
+// de 18,5 a 25 = peso ideal
+// de 25 a 30 = Sobrepeso
+// de 30 a 35 = Obesidade
+// de 35 a 40 = Obesidade severa
+// de 40 ou mais = Obesidade mórbida
+   Escreval ("Qual o seu peso? ")
+   Leia (peso)
+   Escreval ("Qual a sua altura? ")
+   Leia (alt)
+   IMC <- peso / (alt ^ 2)
+   Escreval ("Seu IMC é: ", IMC:5:2)
+      Se (IMC < 17) entao
+      Escreval ("De acordo com a OMS, você está muito abaixo do peso ideal.")
+      FimSe
+      Se (IMC > 17) e (IMC <= 18.5) entao
+      Escreval ("De acordo com a OMS, você está abaixo do peso ideal.")
+      Fimse
+      Se (IMC > 18.5) e (IMC <= 25) entao
+      Escreval ("De acordo com a OMS, você está com o seu peso ideal.")
+      Fimse
+      Se (IMC > 25) e (IMC <= 30) entao
+      Escreval ("De acordo com a OMS, você está com sobrepeso e precisa se exercitar e melhorar a alimentação.")
+      Fimse
+      Se (IMC > 30) e (IMC <= 35) entao
+      Escreval ("De acordo com a OMS, você está na faixa de obesidade. Procure um profissional.")
+      Fimse
+      Se (IMC > 35) e (IMC <= 40) entao
+      Escreval ("De acordo com a OMS, você está na faixa de OBESIDADE SEVERA. Sua saúde está em risco.")
+      Fimse
+      Se (IMC > 40) entao
+      Escreval ("De acordo com a OMS, você está na faixa de OBESIDADE MÓRBIDA. Sua VIDA está em risco.")
+      Fimse
+Fimalgoritmo
+
+
+
+
+Algoritmo "Departamento de Trânsito"
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Gustavo Guanabara
+// Descrição   : Verifica se o motorista está apto a tirar CNH
+// Autor(a)    : Danilo A. S. Fontes
+// Data atual  : 11/03/2020
+Var
+   ano, nasc, idade: Inteiro
+
+Inicio
+      Escreval ("-------------------------------------------")
+      Escreval ("   Departamento de Trânsito de São Paulo   ")
+      Escreval ("-------------------------------------------")
+      Escreva ("Em que ano estamos? ")
+      Leia (ano)
+      Escreva ("Em que ano você nasceu? ")
+      Leia (nasc)
+      idade <- ano - nasc
+      Escreval ("Verificando...")
+      Escreval ("Verificando..")
+      Escreval ("Verificando.")
+      Escreval ("----- Status atual -----")
+           Se (idade >= 18) entao
+           Escreval ("Você tem", idade, " anos, e pode tirar sua CNH.")
+           senao (idade < 18)
+           Escreval ("Você tem", idade, " anos, e ainda não pode tirar sua CNH.")
+      Fimse
+Fimalgoritmo
+
+
+e por ultimo mas não menos importante:
+
+
+Algoritmo "Boletim Escolar"
+// Disciplina  : [Linguagem e Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Calcula se o aluno foi aprovador ou reprovado.
+// Autor(a)    : Danilo A. S. Fontes
+// Data atual  : 11/03/2020
+Var
+   ativ, trab, prova, media: Real
+   aluno: Caractere
+
+Inicio
+      Escreval ("----------------------------")
+      Escreval ("  Escola Tubarão Banguela")
+      Escreval ("----------------------------")
+      Escreval ("Qual o nome do aluno?")
+      Leia (aluno)
+      Escreval ("----------------------------")
+      Escreval (" Sistema de notas do aluno:")
+      Escreval ("----------------------------")
+      Escreval ("Nota da atividade de classe:")
+      Leia (ativ)
+      Escreval ("Nota do trabalho de casa:")
+      Leia (trab)
+      Escreval ("Nota da avaliação:")
+      Leia (prova)
+      media <- (ativ + trab + prova) / 3
+      Escreval ("----------------------------")
+      Escreval ("Média geral do bimestre:")
+      Escreval ("----------------------------")
+      Escreval ("Média: ", media:5:2)
+      Se (media >= 7) entao
+           Escreval ("O Aluno (a) ", aluno, " teve média:", media:5:2, ", e está aprovado.")
+           senao (media < 7)
+           Escreval ("O Aluno (a) ", aluno, " teve média:", media:5:2, ", e está reprovado.")
+      Fimse
+Fimalgoritmo
