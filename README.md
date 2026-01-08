@@ -26,7 +26,7 @@ Alguns exercícios podem ser visualizados via **GitHub Pages**, facilitando a an
 
 ## 👤 Sobre mim
 
-Sou iniciante na área de tecnologia, com estudos em **HTML5, CSS3, Excel e Python**, buscando oportunidades para aprender, evoluir e crescer profissionalmente na área de desenvolvimento.
+Sou iniciante na área de tecnologia, com estudos em **HTML5, CSS3, e Python**, buscando oportunidades para aprender, evoluir e crescer profissionalmente na área de desenvolvimento.
 
 ---
 
